@@ -1,0 +1,59 @@
+/* Social media hovering CSS */
+.icons {
+  position: fixed;
+  top: 30%;
+  left: 0%;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.icons a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 22px;
+  font-family: 'Oswald', sans-serif;
+  margin: 2px;
+  text-align: right;
+  border-radius: 0px 50px 50px 0px;
+  transform: translateX(-150px); /* Initially hidden */
+  transition: transform 0.5s;
+  display: flex;
+  align-items: center; /* Centers image and text vertically */
+  gap: 10px; /* Space between image and text */
+  padding-left: 20px;
+}
+
+.icons a:hover {
+  transform: translateX(0); /* Slide in on hover */
+}
+
+.icons a img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  transition: transform 0.5s;
+  transform: rotate(0deg); /* Initial state */
+  background-color: transparent;
+}
+
+.icons a:hover img {
+  transform: rotate(360deg); /* Rotate on hover */
+}
+
+/* Individual social media styles */
+.facebook {
+  background-color: #2980b9;
+  color: white;
+}
+
+.whatsapp {
+  background-color: #16e150;
+  color: white;
+}
+
+.instagram {
+  background-color:  rgb(221, 42 ,123);
+  color: #e8dede;
+}
