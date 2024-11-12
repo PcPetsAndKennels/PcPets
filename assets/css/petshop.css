@@ -315,18 +315,18 @@ body {
     #HEADER
   \*-----------------------------------*/
 
-.action-btn.user {
-  display: none;
-}
+
+
+.action-btn.user { display: none; }
 
 .header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #FFEEA9;
   padding-block: 20px;
   z-index: 4;
+  color: #050404;
 }
 
 .header.active {
@@ -347,14 +347,10 @@ body {
 }
 
 .nav-toggle-btn.active .menu-icon,
-.nav-toggle-btn .close-icon {
-  display: none;
-}
+.nav-toggle-btn .close-icon { display: none; }
 
 .nav-toggle-btn .menu-icon,
-.nav-toggle-btn.active .close-icon {
-  display: block;
-}
+.nav-toggle-btn.active .close-icon { display: block; }
 
 .logo {
   font-family: var(--ff-carter_one);
@@ -386,9 +382,7 @@ body {
 }
 
 .nav-toggle-btn:is(:hover, :focus),
-.header .action-btn:is(:hover, :focus) {
-  transform: scale(1.1);
-}
+.header .action-btn:is(:hover, :focus) { transform: scale(1.1); }
 
 .navbar {
   position: fixed;
@@ -423,13 +417,11 @@ body {
   right: 0;
   padding: 15px;
   background-color: var(--sonic-silver);
-  color: var(--white);
+  color:var(--white);
   font-weight: var(--fw-700);
   text-transform: uppercase;
   text-align: center;
 }
-
-
 
 /*---------------------------------*\
     -stars
@@ -492,29 +484,63 @@ body {
 /*-----------------------------------*\
     #CATEGORY
   \*-----------------------------------*/
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-.category-card .card-banner {
-  border-radius: var(--radius-10);
-}
+  .products-heading {
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+    margin-top: 30px;
+    margin-left: 45%;
+  }
 
-.category-card .img-cover {
-  transition: var(--transition-2);
-}
+  .cover {
+    width: 100%;
+    height: auto;
+    margin-left: 95px;
+    padding-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
 
-.category-card:is(:hover, :focus-within) .img-cover {
-  transform: scale(1.08);
-}
+  .pcover {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-block-start: 10px;
+    align-content: center;
+    padding-top: 20px;
+  }
 
-.category-card .card-title {
-  margin-block-start: 15px;
-  text-align: center;
-  transition: var(--transition-1);
-}
+  .pcover h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+  }
 
-.category-card .card-title:is(:hover, :focus) {
-  color: var(--portland-orange);
-}
+  .box p {
+    padding-left: 10px;
+    padding-right: 10px;
 
+  }
+
+  .box {
+    margin: 30px;
+    width: 500px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: -1px 0 10px #000000;
+
+  }
+
+  .pcover img {
+    width: 500px;
+    height: 400px;
+  }
 
 
 
@@ -556,122 +582,135 @@ body {
 /*-----------------------------------*\
     #PRODUCT
   \*-----------------------------------*/
-
-/* Set a background color for the card */
-.card {
-  background-color: #FFEEA9;
-  /* Light grey background */
-  border: 1px solid #f7f0f0;
-  /* Subtle border */
-  border-radius: 18px;
-  box-shadow: 0 4px 8px rgba(237, 113, 4, 0.1);
-  /* Slight shadow for a 3D effect */
-  transition: transform 0.3s, box-shadow 0.3s;
-  /* Smooth animation on hover */
-}
-
-.flashcard container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-
-}
-
-.flashcard {
-  background-color: #FFEEA9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 28px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
-  display: flex;
-  gap: 20px;
-
-}
-
-/* Add hover effects to the card */
-.card:hover {
-  transform: scale(1.05);
-  /* Slightly enlarge the card */
-  box-shadow: 0 8px 16px rgba(222, 84, 5, 0.2);
-  /* Deeper shadow */
-}
-
-/* Style the card image */
-.card-img-top {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  height: 200px;
-  /* Set height for uniformity */
-  object-fit: fill;
-  /* Ensure the image fits without distortion */
-}
-
-/* Style the card body */
-.card-body {
-  padding: 30px;
-  text-align: center;
-}
-
-/* Style the card title */
-.card-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #343a40;
-  /* Dark grey for titles */
-}
-
-/* Style the card text */
-.card-text {
-  color: #6c757d;
-  /* Muted grey for body text */
-  line-height: 1.5;
-}
-
-/* Style the card footer */
-.card-footer {
-  background-color: #fe7d20;
-  /* White background for footer */
-  border-top: 1px solid #050404;
-  /* Subtle border */
-  text-align: center;
-  border-radius: 4px;
-  padding: 8px;
-}
-
-/* Style the footer timestamp */
-.text-body-secondary {
-  font-size: 1.3rem;
-  color: #adb5bd;
-  /* Light grey text for timestamp */
-}
-
-/* Responsive adjustments */
+  .card {
+    background-color: #FFEEA9;
+    /* Light grey background */
+    border: 1px solid #f7f0f0;
+    /* Subtle border */
+    border-radius: 18px;
+    box-shadow: 0 4px 8px rgba(237, 113, 4, 0.1);
+    /* Slight shadow for a 3D effect */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Smooth animation on hover */
+  }
+  
+  .flashcard container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+  
+  }
+  
+  .flashcard {
+    background-color: #FFEEA9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 28px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    display: flex;
+    gap: 20px;
+  
+  }
+  
+  /* Add hover effects to the card */
+  .card:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge the card */
+    box-shadow: 0 8px 16px rgba(222, 84, 5, 0.2);
+    /* Deeper shadow */
+  }
+  
+  /* Style the card image */
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+    /* Set height for uniformity */
+    object-fit: fill;
+    /* Ensure the image fits without distortion */
+  }
+  
+  /* Style the card body */
+  .card-body {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  /* Style the card title */
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #343a40;
+    font-family: Arial, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    text-align: center;
+    /* Dark grey for titles */
+  }
+  
+  /* Style the card text */
+  .card-text {
+    color: #6c757d;
+    /* Muted grey for body text */
+    line-height: 1.5;
+  }
+  
+  /* Style the card footer */
+  .card-footer {
+    background-color: #fe7d20;
+    /* White background for footer */
+    border-top: 1px solid #050404;
+    /* Subtle border */
+    text-align: center;
+    border-radius: 4px;
+    padding: 8px;
+  }
+  
+  /* Style the footer timestamp */
+  .text-body-secondary {
+    font-size: 1.3rem;
+    color: white;
+    /* Light grey text for timestamp */
+  }
+  
+  /* Responsive adjustments */
 @media (max-width: 768px) {
   .card-body {
     text-align: left;
-    height: 100px;
-    width: 200px;
+    height: 105px;
+    width: 185px
     /* Align text to the left on smaller screens */
   }
 
   .card-img-top {
     height: 150px;
+    width: 185px;
     /* Smaller image height for mobile devices */
   }
 
   .h1
   {
-    margin-left: -203px;
+    margin-left: -283px;
     margin-top: 66px;
   }
 
   .hero .btn {
-    margin-left: 77px;
+    margin-left: -73px;
   }
 
+  figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 20px;
+    unicode-bidi: isolate;
 }
 
+}
+  
+  
+  
 
 
 
@@ -1199,6 +1238,8 @@ body {
 
   }
 
+  
+
 
 
   /**
@@ -1225,8 +1266,10 @@ body {
   }
 
   .header {
-    --color: var(--white);
+    --color: black;
     background: none;
+    position: sticky;
+    background-color:  #FFEEA9;
   }
 
   .header.active {
@@ -1236,7 +1279,7 @@ body {
 
   .header .logo,
   .header .action-btn {
-    color: var(--color);
+    color: black;
   }
 
   .header .action-btn.user {
@@ -1288,6 +1331,7 @@ body {
   .category-card .h3 {
     --fs-3: 2rem;
   }
+
 
 
 
