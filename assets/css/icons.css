@@ -22,7 +22,7 @@
   display: flex;
   align-items: center; /* Centers image and text vertically */
   gap: 10px; /* Space between image and text */
-  padding-left: 20px;
+  padding-left: 25px;
 }
 
 .icons a:hover {
@@ -54,6 +54,6 @@
 }
 
 .instagram {
-  background-color:  rgb(221, 42 ,123);
+  background-color: #d62976;;
   color: #e8dede;
 }
